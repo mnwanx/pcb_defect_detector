@@ -72,11 +72,11 @@ function predict_shoes() {
   
   img = document.getElementById("target_img");
   tensor = tf.browser.fromPixels(img);
-  tensor = tf.image.resizeNearestNeighbor(tensor, [640, 640]);
+  tensor = tf.image.resizeNearestNeighbor(tensor, [940, 940]);
   tensor = tensor.expandDims(0); 
   tensor = tensor.div(255.0);
 
-  // const input = tf.randomNormal([1, 640, 640, 3]);
+  // const input = tf.randomNormal([1, 940, 940, 3]);
   output = model.predict(tensor);
   output = output.arraySync()[0];
 
@@ -138,7 +138,7 @@ function drawBoxes(boxes, scores, classes) {
     }
   });
   if (classes.length == 0)  {
-    console.log("No Defects");
+    alert("No Defects");
   }
 }
 
