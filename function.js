@@ -8,7 +8,7 @@ let model_loaded = false;
     model = await tflite.loadTFLiteModel("best_float32.tflite");
     model_loaded = true;
     await clearInterval(run_spinner);
-    document.querySelector("#loading_status").innerHTML = "✅ Model is ready";
+    document.querySelector("#loading_status").innerHTML = "✅ Model is ready (v2)";
     document.querySelector("#get_img").disabled = false;
     
   } catch (e)  {
@@ -72,11 +72,11 @@ function predict_shoes() {
   
   img = document.getElementById("target_img");
   tensor = tf.browser.fromPixels(img);
-  tensor = tf.image.resizeNearestNeighbor(tensor, [940, 940]);
+  tensor = tf.image.resizeNearestNeighbor(tensor, [960, 960]);
   tensor = tensor.expandDims(0); 
   tensor = tensor.div(255.0);
 
-  // const input = tf.randomNormal([1, 940, 940, 3]);
+  // const input = tf.randomNormal([1, 960, 960, 3]);
   output = model.predict(tensor);
   output = output.arraySync()[0];
 
