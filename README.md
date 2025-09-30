@@ -1,5 +1,5 @@
 # PCB Defect Detection A.I. Model
-- ```PCB Defect Detection A.I. Model``` is an A.I. model to help people in electrical/electronic to check if defects exist in their PCB design / product.  
+- ```PCB Defect Detection A.I. Model``` is my an A.I. model to help people in electrical/electronic to check if defects exist in their PCB design / product.  
 
 
 ## Model Results (Latest Session)
@@ -40,6 +40,27 @@
 |25   |9886.73|1.2066        |0.49754       |1.1871        |0.98101             |0.983            |0.98896         |0.59488            |1.45504     |0.49827     |1.31934     |4.96e-05   |4.96e-05   |4.96e-05   |
 
 
+## Detection Sample
+- Missing Hole
+<img src="./documentation/ex_missing.png" width=400 />
+
+- Mouse Bite
+<img src="./documentation/ex_mouse.png" width=400 />
+
+- Open Circuit
+<img src="./documentation/ex_open.png" width=400 />
+
+- Short Circuit
+<img src="./documentation/ex_short.png" width=400 />
+
+- SPUR
+<img src="./documentation/ex_spur.png" width=400 />
+
+- Spurious Copper
+<img src="./documentation/ex_spuriouse.png" width=400 />
+
+- Mixed Defects
+<img src="./documentation/example2.png" width=400 />
 
 ## Live Project
 ![](/documentation/example.png)
