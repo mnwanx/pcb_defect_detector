@@ -1,5 +1,5 @@
 # PCB Defect Detection A.I. Model
-- ```PCB Defect Detection A.I. Model``` is my an A.I. model to help people in electrical/electronic to check if defects exist in their PCB design / product.  
+- ```PCB Defect Detection A.I. Model``` is a project to help people in electrical/electronic field to check if defects exist in their PCB design / product.  
 
 
 ## Model Results (Latest Session)
